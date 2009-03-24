@@ -1,0 +1,24 @@
+I did it more than 2 years ago:-)
+
+a simple example:
+
+#!/usr/bin/env ruby
+require File.dirname(__FILE__) + '/mb_string.rb'
+str = "chinese中文"
+charset = "utf-8"
+
+puts str.mb_sub(2, 6)
+puts str.mb_sub(-2, 2)
+puts str.mb_sub(0, 4, '...')
+puts str.mb_size
+puts str.mb_reverse
+puts str.mb_shuffle
+puts str.mb_utf8(:charset => charset)
+puts str.mb_utf8(:charset => charset, :cstyle => true)
+puts str.mb_hex(:charset => charset)
+puts str.mb_hex(:charset => charset, :java_style => true)
+puts str.mb_dec(:charset => charset)
+puts str.mb_to_arr.join(',')
+
+
+PS: I don't have any plan to upgrade the script fow now untill if someone need some changes!!
